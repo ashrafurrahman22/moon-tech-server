@@ -60,7 +60,7 @@ const run = async () => {
           $set : {
               model : updatedProducts.model,
               brand: updatedProducts.brand,
-              status : updatedProducts.status,
+              // status : updatedProducts.status,
           }
       };
       const result = await productCollection.updateOne(filter, updatedDoc, options);
